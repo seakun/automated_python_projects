@@ -1,3 +1,21 @@
+### Nested Lists ###
+if __name__ == '__main__':
+    arr = list();
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        arr.append([score, name])
+
+    sortedArr = sorted(arr)    
+    secondLowest = arr[1][0]
+    arrNames = []
+    for x in range(len(arr)):
+        if arr[x][0] == secondLowest:
+            arrNames.append(arr[x][1])
+    arrNames = sorted(arrNames)
+    for x in range(len(arrNames)):
+        print(arrNames[x])
+
 ### Find the Runner-Up Score! ###
 if __name__ == '__main__':
     n = int(input())
