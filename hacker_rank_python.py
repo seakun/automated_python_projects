@@ -17,6 +17,7 @@ if __name__ == '__main__':
         print(arrNames[x])
 
     # TODO: When all the scores are the same
+    
     # TODO: When there are only 2 values
 
 ### Find the Runner-Up Score! ###
