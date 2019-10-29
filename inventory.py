@@ -9,13 +9,12 @@ def displayInventory(inventory):
     print("Total number of items:", sum)
 
 def addToInventory(inventory, addedItems):
-    updatedInventory = inventory
     for x in addedItems:
-        if(updatedInventory.get(x, 0) == 0):
-            updatedInventory[x] = 1
+        if(inventory.get(x, 0) == 0):
+            inventory[x] = 1
         else:
-            updatedInventory[x] += 1
-    return updatedInventory
+            inventory[x] += 1
+    return inventory
 
 #stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 inv = {'gold coin': 42, 'rope': 1}   
